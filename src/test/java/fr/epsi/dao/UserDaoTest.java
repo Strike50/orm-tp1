@@ -6,7 +6,7 @@ import org.junit.Test;
 public class UserDaoTest {
 
     @Test
-    public void insertUser() {
+    public void testAinsertUser() {
         User user = new User();
         user.setFirstname("Benjamin");
         user.setLastname("Tourman");
@@ -15,7 +15,7 @@ public class UserDaoTest {
     }
 
     @Test
-    public void getUser() {
+    public void testBgetUser() {
         User u = new UserDao().get(1l);
         System.out.println(u.getFirstname());
     }

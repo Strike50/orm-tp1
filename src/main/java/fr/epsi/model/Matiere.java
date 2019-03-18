@@ -1,13 +1,15 @@
 package fr.epsi.model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
+@Entity
+@Table (name = "matiere")
 public class Matiere implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
 
@@ -25,4 +27,7 @@ public class Matiere implements Serializable {
     public long getId() {
         return id;
     }
+
+    @OneToMany (mappedBy = "matiere")
+    List<Note> listNote;
 }

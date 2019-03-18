@@ -6,6 +6,7 @@ import fr.epsi.utils.HibernateUtil;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.util.List;
 import java.util.function.Function;
 
 public abstract class AbstractDao<T> {

@@ -5,13 +5,13 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "user")
-public class User implements Serializable {
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public abstract class User implements Serializable {
 
     @Id
     @GeneratedValue
     private long id;
     private String firstname;
-
     private String lastname;
 
     @Column(unique = true)

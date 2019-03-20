@@ -11,7 +11,7 @@ public class HibernateUtil {
         try {
             // Create the SessionFactory from hibernate.cfg.xml
             Configuration cfg = new Configuration();
-            cfg.configure();
+            cfg.configure("hibernate.cfg.xml");
             cfg.setProperty("hibernate.connection.password", System.getenv("DBMDP"));
             return cfg.buildSessionFactory();
         }

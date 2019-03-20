@@ -13,19 +13,19 @@ public class EtudiantDaoTest {
 
     @Test
     public void testAinsertEtudiant() {
-//        Etudiant etudiant = new Etudiant();
-//        etudiant.setFirstname("Louka");
-//        etudiant.setLastname("Houlgatte");
-//        etudiant.setMail("loua.hb@epsi.fr");
-//        etudiant.setClasse("B3 C1");
-//
-//        System.out.println(new ProfesseurDao().save(etudiant));
-//        System.out.println("test");
+        Etudiant etudiant = new Etudiant();
+        etudiant.setFirstname("Louka");
+        etudiant.setLastname("Houlgatte");
+        etudiant.setMail("loua.hb@epsi.fr");
+        etudiant.setClasse("B3 C1");
+
+        System.out.println(new ProfesseurDao().save(etudiant));
+        System.out.println("test");
     }
 
     @Test
     public void testBgetEtudiant() {
-//        User u = new UserDao().get(1L);
-//        assertEquals("Louka",u.getFirstname());
+        User u = new UserDao().get(1L);
+        assertEquals("Louka",u.getFirstname());
     }
 }

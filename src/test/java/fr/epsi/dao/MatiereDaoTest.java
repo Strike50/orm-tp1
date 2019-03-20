@@ -20,7 +20,7 @@ public class MatiereDaoTest {
 
     @Test
     public void testBgetMatiere() {
-//        Matiere m = new MatiereDao().get(1L);
-//        assertEquals("ORM", m.getName());
+        Matiere m = new MatiereDao().get(1L);
+        assertEquals("ORM", m.getName());
     }
 }

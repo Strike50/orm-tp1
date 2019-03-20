@@ -13,9 +13,6 @@ public class Matiere implements Serializable {
     private long id;
     private String name;
 
-    public Matiere() {
-    }
-
     public String getName() {
         return name;
     }
@@ -29,5 +26,5 @@ public class Matiere implements Serializable {
     }
 
     @OneToMany (mappedBy = "matiere")
-    List<Note> listNote;
+    private List<Note> listNote;
 }

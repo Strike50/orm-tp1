@@ -10,5 +10,5 @@ import java.util.Set;
 public class Professeur extends User {
 
     @OneToMany (mappedBy = "professeur")
-    Set<Note> listNote;
+    private Set<Note> listNote;
 }

@@ -11,6 +11,7 @@ public class Etudiant extends User {
 
     private String classe;
 
+
     public String getClasse() {
         return classe;
     }

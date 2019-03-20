@@ -10,7 +10,10 @@ public class HibernateUtil {
     private static SessionFactory buildSessionFactory() {
         try {
             // Create the SessionFactory from hibernate.cfg.xml
-            return new Configuration().configure().buildSessionFactory();
+            Configuration cfg = new Configuration();
+            cfg.configure();
+            cfg.setProperty("hibernate.connection.password", System.getenv("DBMDP"));
+            return cfg.buildSessionFactory();
         }
         catch (Throwable ex) {
             // Make sure you log the exception, as it might be swallowed

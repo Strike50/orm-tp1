@@ -14,7 +14,7 @@ public class HibernateUtil {
 //            cfg.configure("hibernate.cfg.xml");
 //            cfg.setProperty("hibernate.connection.password", System.getenv("DBMDP"));
 //            return cfg.buildSessionFactory();
-            return new Configuration().configure().buildSessionFactory();
+            return new Configuration().configure().setProperty("hibernate.connection.password", System.getenv("DBMDP")).buildSessionFactory();
         }
         catch (Throwable ex) {
             // Make sure you log the exception, as it might be swallowed

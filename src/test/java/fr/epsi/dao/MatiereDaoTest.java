@@ -12,7 +12,6 @@ public class MatiereDaoTest {
 
     @Test
     public void testAinsertMatiere() {
-        System.out.println(System.getenv());
         Matiere m = new Matiere();
         m.setName("ORM");
 

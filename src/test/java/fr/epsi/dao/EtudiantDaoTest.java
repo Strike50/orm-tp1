@@ -20,6 +20,7 @@ public class EtudiantDaoTest {
         etudiant.setClasse("B3 C1");
 
         System.out.println(new ProfesseurDao().save(etudiant));
+        System.out.println("test");
     }
 
     @Test

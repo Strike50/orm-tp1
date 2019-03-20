@@ -20,6 +20,7 @@ public class MatiereDaoTest {
 
     @Test
     public void testBgetMatiere() {
+        System.out.println("oui");
         Matiere m = new MatiereDao().get(1L);
         assertEquals("ORM", m.getName());
     }
